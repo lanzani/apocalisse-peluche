@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ config.description }}">
+    <meta name="author" content="{{ config.extra.author }}">
+
+    <link rel="icon" href="{{ config.extra.favicon }}" type="image/png">
+
+    <link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) }}">
+
+    <title>
+        {% block title %}
+        {{ config.title }}
+        {% endblock title %}
+    </title>
+</head>
+<body>
+
+
+<main>
+    {% block content %} {% endblock %}
+</main>
+
+
+<script src="//instant.page/5.2.0" type="module"
+        integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+</body>
+</html>
