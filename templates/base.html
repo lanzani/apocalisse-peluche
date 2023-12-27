@@ -19,6 +19,10 @@
 </head>
 <body>
 
+{% block navbar %}
+{% include "components/navbar.html" %}
+{% endblock navbar %}
+
 
 <main>
     {% block content %} {% endblock %}
