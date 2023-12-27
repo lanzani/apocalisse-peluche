@@ -1,0 +1,8 @@
+@mixin content-width($max-width) {
+  //max-width: 50rem;
+  max-width: $max-width;
+  width: clamp(85%, 95%, 100%);
+
+  margin-left: auto;
+  margin-right: auto;
+}
