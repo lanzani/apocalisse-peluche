@@ -97,7 +97,8 @@
       width: 100%;
 
       background: $background-clr;
-      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+      //box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
 
       overflow: hidden;
       transition: .3s ease;
@@ -121,7 +122,8 @@
     }
 
     #check:checked ~ .navbar {
-      height: 13rem;
+      border: dashed 1px $clr-dark-gray;
+      height: 15rem;
     }
 
     .icons {

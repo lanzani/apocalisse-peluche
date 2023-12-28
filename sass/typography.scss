@@ -1,0 +1,47 @@
+@import "variables";
+
+main, footer .email {
+  a {
+    text-decoration: none;
+    color: $clr-orange-light;
+    font-weight: 400;
+    border-bottom: dashed 1px $clr-orange-light;
+
+    &:hover {
+      color: $clr-orange-dark;
+      border-bottom: dashed 1px $clr-orange-dark;
+
+    }
+  transition: 0.1s;
+  }
+
+}
+
+ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+}
+
+h1, h2, h3 {
+  font-family: $h-font;
+  font-weight: $h-font-weight;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
+  color: $h1-font-color;
+  font-style: $h1-font-style;
+
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+}

@@ -38,6 +38,12 @@
         margin: 0 .5rem;
         font-size: $footer-icon-font-size;
         color: $footer-icon-font-color;
+
+        &:hover {
+          color: $clr-orange-dark;
+
+        }
+        transition: 0.2s;
       }
     }
   }
