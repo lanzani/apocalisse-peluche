@@ -1,5 +1,9 @@
+@import "variables";
 
 .header {
+
+  margin: 3rem 0;
+
   position: relative;
   top: 0;
   left: 0;
@@ -17,20 +21,23 @@
   }
 
   .logo {
-    font-size: 2rem;
-    color: #575653;
+    font-family: $logo-font;
+    font-weight: $logo-font-weight;
+    font-size: $logo-font-size;
+    color: $logo-font-color;
     text-decoration: none;
-    font-weight: 700;
   }
 
   .navbar {
     a {
-      position: relative;
-      font-size: 1.15rem;
-      color: #575653;
+      font-family: $nav-font;
+      font-weight: $nav-font-weight;
+      font-size: $nav-font-size;
+      color: $nav-font-color;
       text-decoration: none;
-      font-weight: 500;
-      margin-left: 2.5rem;
+
+      position: relative;
+      margin-left: 2rem;
     }
   }
 
@@ -38,8 +45,8 @@
     position: absolute;
     right: 0;
 
-    font-size: 2.8rem;
-    color: #575653;
+    font-size: $nav-icon-font-size;
+    color: $nav-icon-font-color;
     cursor: pointer;
     display: none;
   }
@@ -57,15 +64,8 @@
 }
 
 /* Breakpoints */
-@media (max-width: 992px) {
-  .header {
-    //padding: 1.3rem 5%;
-  }
-}
-
 @media (max-width: 768px) {
   .header {
-
 
     .navbar {
       position: absolute;
@@ -74,7 +74,7 @@
       height: 0;
       width: 100%;
 
-      background: #FFFCF0;
+      background: $background-clr;
       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 
       overflow: hidden;

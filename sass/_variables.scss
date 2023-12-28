@@ -1,25 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 // Raw Colors
 $clr-paper: #FFFCF0;
 $clr-dark-gray: #3E3E3C;
 
+$clr-orange-light: #cc785c;
+$clr-orange-dark: #AC5235;
+
 // Colors
 $background-clr: $clr-paper;
 
 
-// Fonts
+// === Fonts ===========================================================================================================
 $default-font: 'Karla', sans-serif;
 $default-font-size: 1.2rem;
 $default-font-color: $clr-dark-gray;
 
+// Logo
+$logo-font: 'Vollkorn', serif;
+//$logo-font: 'EB Garamond', serif;
+//$logo-font: 'Playfair Display', serif;
+$logo-font-weight: 400;
+$logo-font-size: 1.7rem;
+$logo-font-color: $clr-orange-light;
+
+// Navbar
+$nav-font: 'Karla', sans-serif;
+$nav-font-weight: 400;
+$nav-font-size: 1.25rem;
+$nav-font-color: $clr-dark-gray;
+
+$nav-icon-font-size: 2rem;
+$nav-icon-font-color: $clr-dark-gray;
+
+// Header
 $header-font: 'Karla', sans-serif;
 $header-font-size: 1.2rem;
 
+// Paragraph
 $paragraph-font: 'Karla', sans-serif;
 $paragraph-font-size: 1.2rem;
 
-// Sizes
-$max-width-small: 50rem;
+// === Sizes ===========================================================================================================
+$max-width-small: 45rem;
 $max-width-large: 60rem;

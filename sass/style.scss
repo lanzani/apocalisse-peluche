@@ -12,6 +12,8 @@
 
 
 body {
+  @include content-width($max-width-small);
+
   min-height: 100vh;
   background-color: $clr-paper;
 
@@ -20,9 +22,6 @@ body {
   color: $default-font-color;
 
   text-align: left;
-
-  @include content-width($max-width-small)
-
 
 }
 
