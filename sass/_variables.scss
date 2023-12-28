@@ -29,7 +29,7 @@ $logo-font: 'Lora', serif;
 //$logo-font: 'Playfair Display', serif;
 $logo-font-weight: 500;
 $logo-font-style: italic;
-$logo-font-size: 1.7rem;
+$logo-font-size: clamp(1.4rem, 4vw, 1.7rem);
 $logo-font-color: $clr-orange-light;
 $logo-font-color-hover: $clr-orange-dark;
 
@@ -49,12 +49,12 @@ $h-font: 'Lora', serif;
 $h-font-weight: 400;
 
 $h1-font-weight: 500;
-$h1-font-size: clamp(2rem, 6vw, 2.4rem);
+$h1-font-size: clamp(1.8rem, 6vw, 2.4rem);
 $h1-font-style: normal;
 $h1-font-color: $clr-dark-gray;
 
-$page-title-font-size: clamp(2.4rem, 6vw, 3rem);
-$page-subtitle-font-size: clamp(1.6rem, 4vw, 1.8rem);
+$page-title-font-size: clamp(2.2rem, 6vw, 3rem);
+$page-subtitle-font-size: clamp(1.5rem, 4vw, 1.8rem);
 
 // Paragraph
 $paragraph-font: 'Karla', sans-serif;

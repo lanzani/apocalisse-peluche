@@ -12,6 +12,18 @@
   box-sizing: border-box;
 }
 
+/* for firefox */
+::-moz-selection {
+  color: $clr-paper;
+  background-color: $clr-orange-light;
+}
+
+::selection {
+  color: $clr-paper;
+  background-color: $clr-orange-light;
+}
+
+
 body {
   @include content-width($max-width-small);
 
@@ -32,6 +44,9 @@ body {
 ul {
   margin-left: 1.5rem;
   margin-bottom: 1rem;
+
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
 }
 
 iframe {

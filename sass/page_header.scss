@@ -33,6 +33,7 @@
     font-style: italic;
     font-size: $page-subtitle-font-size;
     font-weight: 400;
+
   }
 
 }
@@ -58,6 +59,8 @@
 
 @media (max-width: 375px) {
   .page-header {
+
+    margin: 1rem 0;
 
     img {
       width: 180px;
