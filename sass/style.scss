@@ -3,13 +3,14 @@
 @import "variables";
 @import "mixins";
 @import "header";
+@import "images";
+@import "page_header";
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 
 body {
   @include content-width($max-width-small);
@@ -22,15 +23,39 @@ body {
   color: $default-font-color;
 
   text-align: left;
+  line-height: 1.7;
+
 
 }
 
 
 ul {
   margin-left: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 iframe {
   width: 95%;
 }
 
+
+h1, h2, h3 {
+  font-family: $h-font;
+  font-weight: $h-font-weight;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
+  color: $h1-font-color;
+  font-style: $h1-font-style;
+
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+}

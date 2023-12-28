@@ -1,0 +1,66 @@
+@import "variables";
+
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin: 3rem 0;
+
+  line-height: 1.2;
+
+  img {
+    //height: clamp(150px, 5vw, 200px);
+
+    width: 250px;
+
+    //margin: 0 auto;
+
+
+    padding: .5rem;
+    border-bottom: dashed 2px $clr-orange-light;
+  }
+
+  h1 {
+    font-style: italic;
+    font-size: $page-title-font-size;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-style: italic;
+    font-size: $page-subtitle-font-size;
+    font-weight: 400;
+  }
+
+}
+
+
+/* Breakpoints */
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column-reverse;
+    margin: 1.2rem 0;
+
+    text-align: center;
+
+    img {
+      width: 220px;
+    }
+
+    h1 {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .page-header {
+
+    img {
+      width: 180px;
+    }
+  }
+}

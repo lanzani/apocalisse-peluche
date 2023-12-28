@@ -2,7 +2,7 @@
 
 .header {
 
-  margin: 3rem 0;
+  margin: clamp(2rem, 5vw, 3rem) 0;
 
   position: relative;
   top: 0;
@@ -14,7 +14,7 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 
   #check {
     display: none;
@@ -25,7 +25,16 @@
     font-weight: $logo-font-weight;
     font-size: $logo-font-size;
     color: $logo-font-color;
+    font-style: $logo-font-style;
+
     text-decoration: none;
+
+    &:hover {
+      color: $logo-font-color-hover;
+    }
+
+    transition: 0.2s;
+
   }
 
   .navbar {
@@ -34,11 +43,20 @@
       font-weight: $nav-font-weight;
       font-size: $nav-font-size;
       color: $nav-font-color;
+      font-style: $nav-font-style;
       text-decoration: none;
 
       position: relative;
       margin-left: 2rem;
+
+      &:hover {
+        color: $nav-font-color-hover;
+      }
+
+
+      transition: 0.2s;
     }
+
   }
 
   .icons {
@@ -67,6 +85,7 @@
 @media (max-width: 768px) {
   .header {
 
+
     .navbar {
       position: absolute;
       top: 100%;
@@ -80,11 +99,13 @@
       overflow: hidden;
       transition: .3s ease;
 
+
       a {
         display: block;
         font-size: 1.1rem;
         margin: 1.5rem 0;
         text-align: center;
+
       }
     }
 
