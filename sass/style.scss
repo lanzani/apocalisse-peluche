@@ -5,6 +5,7 @@
 @import "header";
 @import "images";
 @import "page_header";
+@import "footer";
 
 * {
   padding: 0;
@@ -23,9 +24,7 @@
   background-color: $clr-orange-light;
 }
 
-
 body {
-  @include content-width($max-width-small);
 
   min-height: 100vh;
   background-color: $clr-paper;
@@ -39,6 +38,20 @@ body {
 
 
 }
+
+.header {
+  @include content-width($max-width-large);
+}
+
+main {
+  @include content-width($max-width-small);
+}
+
+.footer {
+  @include content-width($max-width-large);
+}
+
+
 
 
 ul {

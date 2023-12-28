@@ -1,0 +1,68 @@
+@import "variables";
+@import "mixins";
+
+.footer {
+
+  margin: 3rem 3rem 0 3rem;
+  padding: 3rem 0;
+
+  border-top: dashed 2px $clr-dark-gray;
+
+  .content {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img {
+      width: 100px;
+      margin: 1rem;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .social {
+      display: flex;
+      justify-content: space-evenly;
+
+
+      a {
+        margin: 0 .5rem;
+        font-size: $footer-icon-font-size;
+        color: $footer-icon-font-color;
+      }
+    }
+  }
+
+
+}
+
+/* Breakpoints */
+@media (max-width: 768px) {
+  .footer {
+
+    margin: 2rem 2rem 0 2rem;
+    padding: 2rem 0;
+
+    .content {
+
+      flex-direction: column-reverse;
+      align-items: center;
+
+      text-align: center;
+
+      img {
+        display: none;
+      }
+
+    }
+  }
+}

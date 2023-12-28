@@ -1,0 +1,30 @@
+<footer class="footer">
+    <div class="content">
+        <div class="left">
+
+            <div class="email">
+                <a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a>
+            </div>
+            <div class="copyright">
+                <p>© 2023 {{ config.extra.author }}</p>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="logo">
+                <img src="/images/{{config.extra.logo}}" alt="page icon">
+
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="social">
+                {% for social_link in config.extra.social_links %}
+                <a href="{{ social_link.url }}">
+                    <i class="{{ social_link.icon }}"></i>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</footer>
