@@ -1,5 +1,6 @@
 <header class="header">
-    <a href="#" class="logo">{{ config.title }}</a>
+    {% set home_url = get_url(path="/", trailing_slash=false) %}
+    <a  href="/" class="logo {% if current_url and current_url == home_url %}active{% endif %}" >{{ config.title }}</a>
 
     <input type="checkbox" id="check">
     <label for="check" class="icons">
@@ -11,7 +12,7 @@
         {% for navbar_link in config.extra.navbar_links %}
         {% set link_url = navbar_link.url | replace(from="$BASE_URL", to=config.base_url) %}
 
-        <a href="{{ link_url }}">{{navbar_link.name}}</a>
+        <a {% if current_url and current_url== link_url %} class="active" {% endif %} href="{{ link_url }}">{{navbar_link.name}}</a>
 
         {% endfor %}
 
