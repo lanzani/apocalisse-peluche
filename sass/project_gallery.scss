@@ -6,7 +6,7 @@
   grid-template-rows: repeat(auto-fit, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
 
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 
 
   .item {
@@ -34,6 +34,11 @@
 
     p {
       margin-top: 1rem;
+    }
+
+    h2 {
+      font-weight:700;
+      line-height: 1.2;
     }
 
     &:hover {

@@ -1,0 +1,48 @@
+@import "variables";
+
+.essay-list {
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border: dashed 2px $clr-dark-gray;
+    padding: 1rem;
+
+    i {
+      font-weight: 300;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-weight: 700;
+    }
+
+    &:hover {
+      border-color: $clr-orange-dark;
+      background-color: rgba(204, 129, 104, 0.08);
+      //background-color: rgba(204, 129, 104, 0.83); // Cool color
+
+    }
+
+    transition: 0.2s;
+
+  }
+
+}
+
+@media (max-width: 425px) {
+  .essay-list {
+    .item{
+      flex-direction: column;
+    }
+  }
+}
