@@ -29,6 +29,10 @@
 body {
 
   min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
   background-color: $clr-paper;
 
   font-family: $default-font;

@@ -1,5 +1,20 @@
 @import "variables";
 
+.empty-page-header {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-style: italic;
+    font-size: $page-title-font-size;
+    font-weight: 500;
+    margin: 0;
+  }
+
+}
+
 .page-header {
 
   margin-bottom: 3rem;
@@ -28,6 +43,8 @@
     //border-bottom: dotted 1px $clr-dark-gray;
     //background-color: rgba(204, 120, 92, 0.12);
 
+    font-size: $paragraph-font-size;
+
     font-weight: 300;
     //line-height: 1.2;
 
@@ -40,3 +57,58 @@
   }
 
 }
+
+
+
+
+
+/* Breakpoints */
+@media (max-width: 768px) {
+
+  .empty-page-header {
+    margin-bottom: -1.5rem;
+  }
+
+
+  .page-header {
+
+    margin-bottom: 2rem;
+
+    img {
+      width: 150px;
+    }
+
+  }
+}
+
+@media (max-width: 425px) {
+
+  .page-header{
+    .quote{
+      max-width: 100%;
+    }
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .empty-page-header {
+    margin-bottom: -2rem;
+  }
+
+  .page-header {
+
+    .title {
+      //margin-bottom: -1.5rem;
+    }
+
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 130px;
+    }
+  }
+}
+
+

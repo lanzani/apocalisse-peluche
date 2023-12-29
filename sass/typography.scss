@@ -12,7 +12,8 @@ main, footer .email {
       border-bottom: dashed 1px $clr-orange-dark;
 
     }
-  transition: 0.1s;
+
+    transition: 0.1s;
   }
 
   ul {
@@ -24,13 +25,12 @@ main, footer .email {
   }
 
 
-
 }
 
 .content {
   img {
     margin: 3rem auto;
-    max-width: 70%;
+    max-width: 75%;
     max-height: 500px;
     display: block;
 
@@ -38,20 +38,19 @@ main, footer .email {
   }
 
   blockquote {
-    max-width: 85%;
     margin: 2rem 2rem;
 
     padding-left: 1rem;
     border-left: dashed 2px $clr-dark-gray;
 
     font-style: italic;
+    font-size: $paragraph-font-size;
     //line-height: 1.2;
     p {
       margin: 0;
     }
   }
 }
-
 
 
 h1, h2, h3 {
@@ -81,3 +80,31 @@ p {
 }
 
 
+@media (max-width: 425px) {
+
+  .content {
+    blockquote {
+      margin: 1.5rem 0;
+    }
+
+    img {
+      margin: 1.5rem auto;
+      max-width: 95%;
+      max-height: 500px;
+      display: block;
+
+      border-radius: 5px;
+    }
+  }
+
+}
+
+@media (max-width: 375px) {
+  .content {
+    blockquote {
+      margin: 2rem 0;
+    }
+
+
+  }
+}
