@@ -45,6 +45,10 @@ main, footer .email {
     border-left: dashed 2px $clr-dark-gray;
 
     font-style: italic;
+    //line-height: 1.2;
+    p {
+      margin: 0;
+    }
   }
 }
 
