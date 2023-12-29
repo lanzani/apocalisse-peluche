@@ -68,9 +68,17 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+h2 {
+  font-size: $h2-font-size;
+}
+
 p {
   margin-bottom: 1rem;
   font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+}
+
+a {
   font-size: $paragraph-font-size;
 }
 

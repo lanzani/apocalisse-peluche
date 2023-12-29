@@ -10,6 +10,36 @@
 
     {{ section.content | safe }}
 
+    <h1>Now</h1>
+    <div class="project-gallery">
+        {% for page in section.pages %}
+        <div class="item">
+            <div class="card-header">
+                <img src="/images/{{ page.extra.title_icon }}">
+            </div>
+
+            <div class="card-content">
+                <i>{{ page.extra.side_tag }}</i>
+
+                <h2>{{ page.title }}</h2>
+
+                {% if page.extra.url %}
+                <a href="{{ page.extra.url }}">{{ page.extra.url_alias }}</a>
+                {% endif %}
+
+                <p>{{ page.description }}</p>
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+    <br>
+    <p>For smaller projects check out my <a href="https://github.com/lanzani">GitHub</a>.</p>
+
+    <h1>Past</h1>
+
+
+
 </div>
 
 {% endblock content %}

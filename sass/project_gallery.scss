@@ -1,0 +1,50 @@
+@import "variables";
+@import "mixins";
+
+.project-gallery {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+
+  grid-gap: 1rem;
+
+
+  .item {
+    border: dashed 2px $clr-dark-gray;
+
+    padding: 2rem;
+
+    .card-header {
+
+      border-bottom: solid 1px $clr-dark-gray;
+      margin-bottom: 1.5rem;
+
+      img {
+        position: relative;
+        z-index: -10;
+        margin: 2rem auto;
+        max-height: 3rem;
+      }
+    }
+
+
+    i {
+      font-weight: 300;
+    }
+
+    p {
+      margin-top: 1rem;
+    }
+
+    &:hover {
+      border-color: $clr-orange-dark;
+      background-color: rgba(204, 129, 104, 0.08);
+      //background-color: rgba(204, 129, 104, 0.83); // Cool color
+
+    }
+
+    transition: 0.2s;
+
+  }
+
+}
