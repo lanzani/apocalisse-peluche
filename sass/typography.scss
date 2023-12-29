@@ -15,15 +15,40 @@ main, footer .email {
   transition: 0.1s;
   }
 
+  ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+
+    font-family: $paragraph-font;
+    font-size: $paragraph-font-size;
+  }
+
+
+
 }
 
-ul {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
+.content {
+  img {
+    margin: 3rem auto;
+    max-width: 70%;
+    max-height: 500px;
+    display: block;
 
-  font-family: $paragraph-font;
-  font-size: $paragraph-font-size;
+    border-radius: 5px;
+  }
+
+  blockquote {
+    max-width: 85%;
+    margin: 2rem 2rem;
+
+    padding-left: 1rem;
+    border-left: dashed 2px $clr-dark-gray;
+
+    font-style: italic;
+  }
 }
+
+
 
 h1, h2, h3 {
   font-family: $h-font;
@@ -45,3 +70,10 @@ p {
   font-family: $paragraph-font;
   font-size: $paragraph-font-size;
 }
+
+#rotate-text {
+  transform: rotate(30deg);
+  display: inline-block;
+}
+
+

@@ -1,0 +1,42 @@
+@import "variables";
+
+.page-header {
+
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 170px;
+  }
+
+  h1 {
+    font-style: italic;
+    font-size: $page-title-font-size;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .quote {
+    margin-top: 0.5rem;
+    padding: 0.1rem 1rem;
+
+    max-width: 85%;
+    border-left: dashed 2px $clr-dark-gray;
+    //border-bottom: dotted 1px $clr-dark-gray;
+    //background-color: rgba(204, 120, 92, 0.12);
+
+    font-weight: 300;
+    //line-height: 1.2;
+
+    blockquote {
+      //font-family: "Lora", serif;
+      font-style: italic;
+
+    }
+
+  }
+
+}
