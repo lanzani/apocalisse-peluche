@@ -1,0 +1,51 @@
+{% macro input(label, type="text") %}
+<div class="page-header">
+
+    <div class="image {{label}}">
+        {% if page %}
+        <img src="/images/{{page.extra.title_icon}}" alt="page icon">
+        {% else %}
+        <img src="/images/{{section.extra.title_icon}}" alt="page icon">
+        {% endif %}
+
+    </div>
+
+    <div class="title">
+        {% if page %}
+        <h1>{{ page.title }}</h1>
+        {% else %}
+        <h1>{{ section.title }}</h1>
+        {% endif %}
+    </div>
+
+    <div class="quote">
+        <figure>
+            <!--            <i class="bi bi-quote"></i>-->
+            <blockquote class="blockquote">
+                {% if page %}
+                {{ page.extra.quote.quote }}
+                {% else %}
+                {{ section.extra.quote.quote }}
+                {% endif %}
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                {% if page %}
+
+                &mdash; {{ page.extra.quote.author }}{% if page.extra.quote.source != "" %},
+                <cite title="Source Title">{{ page.extra.quote.source }}</cite>
+                {% endif %}
+
+                {% else %}
+
+                &mdash; {{ section.extra.quote.author }}{% if section.extra.quote.source != "" %},
+                <cite title="Source Title">{{ section.extra.quote.source }}</cite>
+                {% endif %}
+
+                {% endif %}
+
+            </figcaption>
+        </figure>
+    </div>
+
+</div>
+{% endmacro input %}

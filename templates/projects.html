@@ -1,16 +1,14 @@
 {% extends "base.html" %}
+{% import "components/page-header.html" as macros %}
+
 
 {% block content %}
 
-{% include "components/empty-page-header.html" %}
+{{ macros::input(label="large", type="text") }}
 
 <div class="content">
 
-    {% if page %}
-    {{ page.content | safe }}
-    {% else %}
     {{ section.content | safe }}
-    {% endif %}
 
 </div>
 
