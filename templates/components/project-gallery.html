@@ -1,0 +1,33 @@
+{% macro input(active, type="text") %}
+
+<div class="project-gallery">
+    {% for page in section.pages %}
+    {% if page.extra.active_project == active %}
+    <div class="item">
+
+        {% if page.extra.title_icon %}
+        <div class="card-header">
+            <img src="/images/{{ page.extra.title_icon }}">
+        </div>
+        {% else %}
+        <br>
+        {% endif %}
+
+        <div class="card-content">
+            <i>{{ page.extra.side_tag }}</i>
+
+            <h2>{{ page.title }}</h2>
+
+            {% if page.extra.url %}
+            <a href="{{ page.extra.url }}">{{ page.extra.url_alias }}</a>
+            {% endif %}
+
+            <p>{{ page.description }}</p>
+        </div>
+
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+{% endmacro input %}

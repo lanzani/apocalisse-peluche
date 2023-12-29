@@ -1,44 +1,23 @@
 {% extends "base.html" %}
-{% import "components/page-header.html" as macros %}
+{% import "components/page-header.html" as page_header %}
+{% import "components/project-gallery.html" as project_galley %}
 
 
 {% block content %}
 
-{{ macros::input(label="large", type="text") }}
+{{ page_header::input(label="large", type="text") }}
 
 <div class="content">
 
     {{ section.content | safe }}
 
     <h1>Now</h1>
-    <div class="project-gallery">
-        {% for page in section.pages %}
-        <div class="item">
-            <div class="card-header">
-                <img src="/images/{{ page.extra.title_icon }}">
-            </div>
-
-            <div class="card-content">
-                <i>{{ page.extra.side_tag }}</i>
-
-                <h2>{{ page.title }}</h2>
-
-                {% if page.extra.url %}
-                <a href="{{ page.extra.url }}">{{ page.extra.url_alias }}</a>
-                {% endif %}
-
-                <p>{{ page.description }}</p>
-            </div>
-
-        </div>
-        {% endfor %}
-    </div>
+    {{ project_galley::input(active=true, type="text") }}
     <br>
     <p>For smaller projects check out my <a href="https://github.com/lanzani">GitHub</a>.</p>
 
     <h1>Past</h1>
-
-
+    {{ project_galley::input(active=false, type="text") }}
 
 </div>
 
