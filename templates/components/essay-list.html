@@ -1,0 +1,34 @@
+{% macro input() %}
+<div class="essay-list">
+    {% for page in section.pages %}
+
+    <div class="item">
+
+        <div class="cover-image">
+            {% set image = resize_image(path="/images/"~page.extra.cover_image, width=200, height=200, op="fill") %}
+            <img src="{{ image.url }}" alt="cover-image">
+        </div>
+
+        <div class="card-content">
+
+
+            <p>
+                <i>{{ page.date }}</i>
+                {% if page.extra.star and page.extra.star==true %}
+                — <b>Suggested ✨</b>
+                {% endif %}
+            </p>
+
+            <h3>{{ page.title }}</h3>
+
+            <p>{{ page.description }}</p>
+
+            <a href="{{ page.extra.url }}">Read on Medium</a>
+        </div>
+
+
+    </div>
+
+    {% endfor %}
+</div>
+{% endmacro input %}

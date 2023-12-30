@@ -6,6 +6,10 @@
   flex-direction: column;
   gap: 2rem;
 
+  .cover-image {
+    z-index: -10;
+  }
+
   .item {
     display: flex;
     flex-direction: row;

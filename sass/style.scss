@@ -56,8 +56,52 @@ main {
 }
 
 
-iframe {
+.substack {
+
   width: 95%;
+
+}
+
+.youtube-video {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  max-width: 100%;
+
+  border: dashed 2px $clr-dark-gray;
+  padding: 3rem;
+
+  iframe {
+    //z-index: -10;
+
+    border-radius: 5px;
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+
+  &:hover {
+    border-color: $clr-orange-dark;
+    background-color: rgba(204, 129, 104, 0.08);
+    //background-color: rgba(204, 129, 104, 0.83); // Cool color
+
+  }
+
+  transition: 0.2s;
+}
+
+.last-essay {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .youtube-video {
+    padding: 1.5rem;
+  }
 }
 
 
+@media (max-width: 425px) {
+  .youtube-video {
+    padding: .5rem;
+  }
+}

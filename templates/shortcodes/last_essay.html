@@ -1,0 +1,31 @@
+{% import "components/essay-list.html" as essay_list %}
+
+<div {% if class %}class="{{class}}" {% endif %}>
+    <div class="essay-list">
+        <div class="item">
+
+            <div class="cover-image">
+                {% set image = resize_image(path="/images/building_things_cover.webp", width=200, height=200, op="fill") %}
+                <img src="{{ image.url }}" alt="cover-image">
+            </div>
+
+            <div class="card-content">
+
+
+                <p>
+                    <i>2023-09-11</i>
+                    — <b>Suggested ✨</b>
+                </p>
+
+                <h3>What I’ve Learned About Making Things</h3>
+
+                <p>in 5+ Years of Building From Scratch</p>
+
+                <a href="https://levelup.gitconnected.com/what-ive-learned-about-building-things-cd6c4a026e5a">Read on Medium</a>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
