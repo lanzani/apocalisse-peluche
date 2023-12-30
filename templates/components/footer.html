@@ -12,7 +12,10 @@
 
         <div class="middle">
             <div class="logo">
-                <img src="/images/{{config.extra.logo}}" alt="page icon">
+
+                {% set image = resize_image(path="/images/"~config.extra.logo, width=200, height=200, op="fill", format="webp") %}
+
+                <img src="{{ image.url }}" alt="page icon">
 
             </div>
         </div>
@@ -20,7 +23,7 @@
         <div class="right">
             <div class="social">
                 {% for social_link in config.extra.social_links %}
-                <a href="{{ social_link.url }}">
+                <a href="{{ social_link.url }}" aria-label="{{ social_link.name }}">
                     <i class="{{ social_link.icon }}"></i>
                 </a>
                 {% endfor %}
