@@ -1,7 +1,7 @@
 @import "variables";
 
 
-$size: 500px;
+$size: 300px;
 
 .clock {
   line-height: 1;
@@ -15,13 +15,13 @@ $size: 500px;
   justify-content: center;
   align-items: center;
 
-  border: solid 1px red;
+  //border: solid 1px red;
 
   overflow: hidden;
 
   .wrapper {
 
-    border: dashed 2px $clr-dark-gray;
+    //border: dashed 2px $clr-dark-gray;
 
     display: flex;
     justify-content: center;
@@ -34,6 +34,22 @@ $size: 500px;
 
     border-radius: 50%;
 
+
+    .clock-quote {
+      position: absolute;
+
+      top: 90px;
+      max-width: 120px;
+
+      text-align: center;
+
+      p {
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 800;
+      }
+    }
+
     .bar-seconds, .number-hours {
       position: absolute;
       width: 100%;
@@ -45,7 +61,7 @@ $size: 500px;
       span {
         position: absolute;
         transform: rotate(calc(var(--index) * 6deg));
-        inset: -20px;
+        inset: 0;
         text-align: center;
 
         p {
@@ -62,7 +78,7 @@ $size: 500px;
           p {
             background-color: $clr-orange-light;
             width: 6px;
-            height: 18px;
+            height: 24px;
 
             transform: translateY(1px);
           }
@@ -77,20 +93,17 @@ $size: 500px;
         position: absolute;
         transform: rotate(calc(var(--index) * 30deg));
 
-        inset: 5%;
+        inset: 12%;
 
         text-align: center;
 
-
-        //p {
-        //  transform: rotate(calc(var(--index) * -30deg));
-        //}
 
         p {
 
           transform: rotate(calc(var(--index) * -30deg));
 
-          font-size: 2rem;
+          font-size: 1.2rem;
+          font-weight: 600;
 
           //font-family: 'Lora', serif;
           font-family: 'Karla', sans-serif;
@@ -122,17 +135,19 @@ $size: 500px;
       }
 
       .hours {
-        width: 320px;
-        height: 320px;
+
+
+        width: 160px;
+        height: 160px;
         //border: 2px solid red;
 
         //transform: rotate(30deg);
 
         i {
-          width: 8px;
+          width: 4px;
 
           // half of patent height
-          height: 160px;
+          height: 80px;
           background: $clr-dark-gray;
 
 
@@ -141,30 +156,31 @@ $size: 500px;
       }
 
       .minutes {
-        width: 450px;
-        height: 450px;
+        width: 225px;
+        height: 225px;
         //border: 2px solid green;
 
         //transform: rotate(60deg);
 
-        &::before {
-          content: '';
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-
-          width: 25px;
-          height: 25px;
-          background: $clr-dark-gray;
-
-          border-radius: 50%;
-        }
+        //Central nob
+        //&::before {
+        //  content: '';
+        //  position: absolute;
+        //  top: 50%;
+        //  transform: translateY(-50%);
+        //
+        //  width: 12px;
+        //  height: 12px;
+        //  background: $clr-dark-gray;
+        //
+        //  border-radius: 50%;
+        //}
 
         i {
-          width: 8px;
+          width: 4px;
 
           // half of patent height
-          height: 225px;
+          height: 112px;
           background: $clr-dark-gray;
 
 
@@ -172,20 +188,21 @@ $size: 500px;
       }
 
       .seconds {
-        width: 480px;
-        height: 480px;
+        width: 260px;
+        height: 260px;
         //border: 2px solid blue;
 
         //transform: rotate(90deg);
 
+        // Central Nob
         &::before {
           content: '';
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
 
-          width: 20px;
-          height: 20px;
+          width: 12px;
+          height: 12px;
           background: $clr-orange-light;
 
           border-radius: 50%;
@@ -195,7 +212,7 @@ $size: 500px;
           width: 4px;
 
           // half of patent height
-          height: calc(240px + 70px);
+          height: calc(130px + 30px);
           background: $clr-orange-light;
 
 
