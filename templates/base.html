@@ -11,6 +11,9 @@
 
     <link rel="stylesheet" href="{{ get_url(path='style.css', trailing_slash=false) }}">
 
+    <link rel="stylesheet" href="{{ get_url(path='lite-yt-embed.css', trailing_slash=false) }}"/>
+    <script type="text/javascript" src="{{ get_url(path='lite-yt-embed.js', trailing_slash=false) }}"></script>
+
     <title>
         {% block title %}
         {{ config.title }}
@@ -34,6 +37,7 @@
 
 
 <script type="text/javascript" src="{{ get_url(path='script.js', trailing_slash=false) }}"></script>
+
 <script src="//instant.page/5.2.0" type="module"
         integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
 </body>

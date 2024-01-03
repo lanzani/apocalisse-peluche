@@ -1,9 +1,6 @@
 <div {% if class %}class="{{class}}" {% endif %}>
-    <iframe title="youtube-embed"
-            loading="lazy"
-            src="https://www.youtube.com/embed/{{id}}{% if autoplay %}?autoplay=1{% endif %}"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen>
-    </iframe>
+
+    <!-- Use the element. You may use it before the lite-yt-embed JS is executed. -->
+    <lite-youtube videoid="{{id}}" playlabel="Play: Keynote (Google I/O '18)"></lite-youtube>
+
 </div>
