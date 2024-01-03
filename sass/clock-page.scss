@@ -1,14 +1,149 @@
+@import "variables";
+
 
 .clock-page-header {
   margin: 3rem 0 3rem 0;
 
+  text-align: center;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 
-  .title h1{
+  .title h1 {
     font-style: italic;
+    //font-size: 3rem;
     //margin: 0;
+  }
+}
+
+.clock-story {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .chapter {
+    margin: 10rem 0 10rem 0;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  #chapter-1 {
+
+
+    .number-hours {
+
+      span {
+
+        transform: rotate(calc(var(--index) * 30deg));
+
+        inset: 12%;
+
+        text-align: center;
+
+
+        p {
+
+          transform: rotate(calc(var(--index) * -30deg));
+
+          font-size: 4rem;
+
+          //font-family: 'Lora', serif;
+          font-family: 'Karla', sans-serif;
+          //font-style: italic;
+
+          color: $clr-dark-gray;
+        }
+      }
+    }
+  }
+
+  #chapter-2 {
+
+  }
+
+  #chapter-3 {
+
+    h1 {
+      text-align: center;
+      color: $clr-paper;
+
+      &:hover{
+        //color: $clr-dark-gray-light;
+
+      }
+    }
+
+
+
+
+    #cube-container {
+      padding-top: 10rem;
+
+      box-sizing: border-box;
+      transform-style: preserve-3d;
+      top: 50%;
+      left: 50%;
+      position: relative;
+      width: 250px;
+      height: 250px;
+      transition: 2s cubic-bezier(.68, -0.55, .27, 1.55); //backword ease-in-out courtesy of firefox dev tools
+      transform: translate(-50%, -50%);
+
+      .face {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        border: 2px solid $clr-orange-dark;
+        background: $clr-orange-light;
+        //box-shadow: 0px 0px 150px $clr-orange-light;
+
+        &:hover {
+          background: $clr-orange-dark;
+          cursor: pointer;
+        }
+
+        &.top {
+          transform: rotateX(90deg);
+          margin-top: -50%;
+        }
+
+        &.right {
+          transform: rotateY(90deg);
+          margin-left: 50%;
+        }
+
+        &.left {
+          transform: rotateY(-90deg);
+          margin-left: -50%;
+        }
+
+        &.bottom {
+          transform: rotateX(90deg);
+          margin-top: 50%;
+        }
+
+        &.back {
+          transform: translateZ(125px);
+        }
+
+        &.front {
+          transform: translateZ(-125px);
+        }
+      }
+
+      &:hover {
+        //box-shadow: 0px 0px 150px #ed3403;
+        transform: rotateX(-25deg) rotateY(-40deg) translate(-50%, -50%);
+        transition: 2s cubic-bezier(.68, -0.55, .27, 1.55); //backword ease-in-out courtesy of firefox dev tools
+      }
+    }
+
+    //glow idea inspired by codesandbox landing
   }
 }
