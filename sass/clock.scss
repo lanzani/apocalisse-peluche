@@ -6,6 +6,17 @@ $size: 300px;
 .clock {
   line-height: 1;
 
+  a {
+    border: none;
+
+    color: $clr-dark-gray;
+
+    &:hover {
+      border: none;
+      color: $clr-dark-gray;
+    }
+  }
+
 
   p {
     margin: 0;
@@ -69,7 +80,7 @@ $size: 300px;
           display: inline-block;
 
           width: 2px;
-          height: 12px;
+          height: 6px;
           background-color: $clr-dark-gray;
           border-radius: 2px;
         }
@@ -77,7 +88,7 @@ $size: 300px;
         &:nth-child(5n) {
           p {
             background-color: $clr-orange-light;
-            width: 6px;
+            width: 4px;
             height: 24px;
 
             transform: translateY(1px);
@@ -221,106 +232,39 @@ $size: 300px;
 
 
     }
+
+    &:hover {
+      .bar-seconds {
+        span {
+
+          &:nth-child(5n) {
+            p {
+              background-color: $clr-orange-dark;
+              width: 4px;
+              height: 24px;
+
+              transform: translateY(1px);
+            }
+          }
+        }
+      }
+
+      .hands-box {
+        .seconds {
+
+          &::before {
+            background: $clr-orange-dark;
+          }
+
+          i {
+            background: $clr-orange-dark;
+          }
+
+        }
+      }
+
+
+    }
+
   }
 }
-
-//// Options
-//$black: $clr-dark-gray;
-//$size: 400px;
-//$white: $clr-dark-gray-light;
-//$feature: $clr-orange-light;
-//
-//
-//.clock-wrapper {
-//  line-height: 1;
-//  height: 100%;
-//
-//  display: flex;
-//  flex-direction: column;
-//  justify-content: center;
-//  align-items: center;
-//
-//
-//  .clock {
-//    height: $size;
-//    width: $size;
-//    border-radius: #{$size / 2};
-//    display: flex;
-//    justify-content: center;
-//    position: relative;
-//
-//    &__second,
-//    &__minute,
-//    &__hour, &__indicator {
-//      position: absolute;
-//
-//      //left: calc(50% - 1px);
-//      left: calc(50%);
-//
-//      width: 2px;
-//      background: $white;
-//
-//      //transform-origin: bottom center;
-//      transform-origin: bottom;
-//
-//      z-index: 2;
-//      border-radius: 1px;
-//    }
-//
-//    &__second {
-//      height: #{($size / 2) - 10};
-//      margin-top: 10px;
-//      background: $feature;
-//      animation: time 60s infinite steps(60);
-//      z-index: 3;
-//    }
-//
-//    &__minute {
-//      height: #{($size / 2) - 20};
-//      margin-top: 20px;
-//      opacity: 0.75;
-//      animation: time 3600s linear infinite;
-//    }
-//
-//    &__hour {
-//      height: #{($size / 2) - 40};
-//      margin-top: 40px;
-//      animation: time 43200s linear infinite;
-//    }
-//
-//    &__indicator {
-//      height: #{($size / 2) - 2} !important;
-//      border-top: 2px solid $clr-dark-gray;
-//      background: none;
-//    }
-//
-//    &__indicator:nth-of-type(5n) {
-//
-//      height: #{($size / 2) - 7};
-//      border-top: 7px solid $clr-orange-light;
-//    }
-//
-//    &__axis {
-//      background: $feature;
-//      width: 5px;
-//      height: 5px;
-//      border-radius: 3px;
-//      position: absolute;
-//      z-index: 4;
-//      top: #{$size / 2 - 3};
-//
-//    }
-//  }
-//}
-//
-//@for $i from 1 through 60 {
-//  section:nth-of-type(#{$i}) {
-//    transform: rotateZ(calc(6deg * #{$i}));
-//  }
-//}
-//
-//@keyframes time {
-//  to {
-//    transform: rotateZ(-360deg);
-//  }
-//}

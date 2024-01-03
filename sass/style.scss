@@ -11,6 +11,7 @@
 @import "project_gallery";
 @import "essay_list";
 @import "clock";
+@import "clock-page";
 
 * {
   padding: 0;
@@ -54,6 +55,7 @@ body {
 
 main {
   @include content-width($max-width-small);
+  margin-bottom: 3rem;
 }
 
 

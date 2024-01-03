@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="clock-page-header">
+
+<!--    <div class="title">-->
+<!--        <h1>L'uomo misura il tempo</h1>-->
+<!--    </div>-->
+
+    {% include "components/clock.html" %}
+
+<!--    <div class="title">-->
+<!--        <h1>e il tempo misura l'uomo.</h1>-->
+<!--    </div>-->
+
+    <div class="title">
+        <h1>When is a good time to begin?</h1>
+    </div>
+</div>
+
+<div class="content">
+    {{ page.content | safe }}
+</div>
+
+{% endblock content %}
