@@ -1,6 +1,10 @@
 <div {% if class %}class="{{class}}" {% endif %}>
 
     <!-- Use the element. You may use it before the lite-yt-embed JS is executed. -->
-    <lite-youtube videoid="{{id}}" playlabel="Play: Keynote (Google I/O '18)"></lite-youtube>
+    <lite-youtube videoid="{{id}}"
+                  playlabel="{{playlabel}}"
+                  style="background-image: {{cover}});">
+
+    </lite-youtube>
 
 </div>
