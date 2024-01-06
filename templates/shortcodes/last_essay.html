@@ -6,7 +6,8 @@
 
             <div class="cover-image">
                 {% set image = resize_image(path="/images/building_things_cover.webp", width=200, height=200, op="fill") %}
-                <img src="{{ image.url }}" alt="cover-image">
+
+                <img loading="lazy" src="{{ image.url }}" alt="cover-image">
             </div>
 
             <div class="card-content">

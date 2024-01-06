@@ -15,7 +15,7 @@
 
                 {% set image = resize_image(path="/images/"~config.extra.logo, width=200, height=200, op="fill", format="webp") %}
 
-                <img src="{{ image.url }}" alt="page icon">
+                <img loading="lazy" src="{{ image.url }}" alt="page icon">
 
             </div>
         </div>
