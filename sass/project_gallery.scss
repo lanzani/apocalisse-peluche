@@ -20,10 +20,11 @@
       margin-bottom: 1.5rem;
 
       img {
-        position: relative;
+        margin: 3rem auto;
+        display: block;
         z-index: -10;
-        margin: 2rem auto;
         max-height: 3rem;
+        border-radius: 5px;
       }
     }
 

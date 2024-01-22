@@ -6,9 +6,6 @@
   flex-direction: column;
   gap: 2rem;
 
-  .cover-image {
-    z-index: -10;
-  }
 
   .item {
     display: flex;
@@ -17,6 +14,14 @@
 
     border: dashed 2px $clr-dark-gray;
     padding: 1rem;
+
+    .cover-image{
+
+    }
+
+    .card-content{
+      padding-left: 1.5rem;
+    }
 
     i {
       font-weight: 300;
@@ -45,7 +50,7 @@
 
 @media (max-width: 425px) {
   .essay-list {
-    .item{
+    .item {
       flex-direction: column;
     }
   }
