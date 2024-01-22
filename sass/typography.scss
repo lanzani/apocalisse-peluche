@@ -1,5 +1,47 @@
 @import "variables";
 
+
+body {
+  font-family: $default-font;
+  font-size: $default-font-size;
+  color: $default-font-color;
+
+  text-align: left;
+}
+
+
+h1, h2, h3 {
+  font-family: $h-font;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
+  color: $h1-font-color;
+  font-style: $h1-font-style;
+
+  line-height: 2rem;
+  padding-bottom: 0.35rem;
+  padding-top: 0.35rem;
+
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+p {
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  font-size: $paragraph-font-size;
+}
+
 main, footer .email {
   a {
     text-decoration: none;
@@ -23,68 +65,55 @@ main, footer .email {
     font-family: $paragraph-font;
     font-size: $paragraph-font-size;
   }
-
-
 }
 
 .content {
-  img {
-    margin: 3rem auto;
-    max-width: 75%;
-    max-height: 500px;
-    display: block;
+  p {
+    img {
 
-    border-radius: 5px;
+      margin: 4rem auto;
+      max-width: 75%;
+      max-height: 500px;
+      display: block;
+
+      border-radius: 5px;
+      //box-shadow: 0 2px 14px rgba(0,0,0,.4);
+      box-shadow: 0 15px 25px rgba(0,0,0,.2);
+
+    }
   }
 
   blockquote {
-    margin: 2rem 2rem;
 
     padding-left: 1rem;
     border-left: dashed 2px $clr-dark-gray;
 
     font-style: italic;
     font-size: $paragraph-font-size;
-    //line-height: 1.2;
-    p {
-      margin: 0;
-    }
+
+    line-height: 2rem;
+    margin-bottom: 2rem;
+
+    font-weight: 300;
+
   }
 }
 
 
-h1, h2, h3 {
-  font-family: $h-font;
-  font-weight: $h-font-weight;
-}
+//h1, h2, h3 {
+//  font-family: $h-font;
+//  font-weight: $h-font-weight;
+//}
+//
 
-h1 {
-  font-size: $h1-font-size;
-  font-weight: $h1-font-weight;
-  color: $h1-font-color;
-  font-style: $h1-font-style;
-
-  margin-top: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-h2 {
-  font-size: $h2-font-size;
-}
-
-h3 {
-  font-size: $h3-font-size;
-}
-
-p {
-  margin-bottom: 1rem;
-  font-family: $paragraph-font;
-  font-size: $paragraph-font-size;
-}
-
-a {
-  font-size: $paragraph-font-size;
-}
+//
+//h2 {
+//  font-size: $h2-font-size;
+//}
+//
+//h3 {
+//  font-size: $h3-font-size;
+//}
 
 #rotate-text {
   transform: rotate(-30deg);
@@ -92,31 +121,31 @@ a {
 }
 
 
-@media (max-width: 425px) {
-
-  .content {
-    blockquote {
-      margin: 1.5rem 0;
-    }
-
-    img {
-      margin: 1.5rem auto;
-      max-width: 95%;
-      max-height: 500px;
-      display: block;
-
-      border-radius: 5px;
-    }
-  }
-
-}
-
-@media (max-width: 375px) {
-  .content {
-    blockquote {
-      margin: 2rem 0;
-    }
-
-
-  }
-}
+//@media (max-width: 425px) {
+//
+//  .content {
+//    blockquote {
+//      margin: 1.5rem 0;
+//    }
+//
+//    img {
+//      margin: 1.5rem auto;
+//      max-width: 95%;
+//      max-height: 500px;
+//      display: block;
+//
+//      border-radius: 5px;
+//    }
+//  }
+//
+//}
+//
+//@media (max-width: 375px) {
+//  .content {
+//    blockquote {
+//      margin: 2rem 0;
+//    }
+//
+//
+//  }
+//}

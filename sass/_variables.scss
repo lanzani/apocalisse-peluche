@@ -27,7 +27,7 @@ $default-font-color: $clr-dark-gray;
 
 // Logo
 $logo-font: 'Lora', serif;
-$logo-font-weight: 500;
+$logo-font-weight: 400;
 $logo-font-style: italic;
 $logo-font-size: clamp(1.4rem, 4vw, 1.7rem);
 $logo-font-color: $clr-orange-light;
@@ -52,9 +52,9 @@ $footer-icon-font-color: $clr-dark-gray;
 $h-font: 'Lora', serif;
 $h-font-weight: 400;
 
-$h1-font-weight: 500;
+$h1-font-weight: 400;
 $h1-font-size: clamp(1.8rem, 6vw, 2.4rem);
-$h1-font-style: normal;
+$h1-font-style: italic;
 $h1-font-color: $clr-dark-gray;
 
 $h2-font-size: clamp(1.6rem, 6vw, 2rem);
