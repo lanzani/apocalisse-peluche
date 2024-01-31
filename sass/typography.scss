@@ -34,6 +34,10 @@ h1 {
   margin-bottom: 4rem;
 }
 
+body h2:nth-child(1){
+  margin-top: 0;
+}
+
 h2 {
   font-size: $h2-font-size;
   font-weight: $h2-font-weight;
@@ -43,12 +47,16 @@ h2 {
   padding-top: 0.35rem;
 
   margin-bottom: 1rem;
+  margin-top: 1rem;
 
 
 }
 
 h3 {
   font-size: $h3-font-size;
+  font-weight: 600;
+
+  margin-bottom: 1rem;
 }
 
 p {
@@ -81,10 +89,13 @@ main, footer .email {
 
   ul {
     margin-left: 1.5rem;
-    margin-bottom: 1rem;
 
     font-family: $paragraph-font;
     font-size: $paragraph-font-size;
+
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
   }
 }
 

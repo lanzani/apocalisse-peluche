@@ -1,0 +1,23 @@
+{% macro input() %}
+
+<div class="list-gallery">
+    {% for page in section.pages %}
+
+    <div class="item">
+
+        <div class="card-content">
+
+            <h3>{{ page.title }}</h3>
+
+            <p>{{ page.description }}</p>
+
+            <a href="{{ page.slug }}">Open list</a>
+        </div>
+
+
+    </div>
+
+    {% endfor %}
+</div>
+
+{% endmacro input %}

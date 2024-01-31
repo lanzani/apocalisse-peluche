@@ -1,0 +1,30 @@
+@import "variables";
+
+
+.list-gallery {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+
+  grid-gap: 2rem;
+
+  .item {
+    border: dashed 2px $clr-dark-gray;
+
+    border-radius: 10px;
+
+    padding: 1rem;
+    //box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+
+    .card-content {
+
+      h3 {
+
+      }
+
+    }
+
+
+  }
+
+}
